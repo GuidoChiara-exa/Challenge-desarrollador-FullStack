@@ -3,7 +3,6 @@ Ext.define('MyApp.view.calculadora.Calculadora', {
     xtype: 'calculadora',
 
     controller: 'calculadora',
-    background: 'blue',
 
     items: [
         {

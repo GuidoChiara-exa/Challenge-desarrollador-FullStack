@@ -4,7 +4,7 @@ Ext.define('MyApp.view.calculadora.CalculadoraController' , {
 
 
     calcular: function (){
-        var referencias = this.getReferences()
+        var referencias = this.getReferences() // referencias calculadora
         var operando1 = referencias.Operando1.getValue()
         var operando2 = referencias.Operando2.getValue()
         var operacion = referencias.operacion.getValue()
@@ -28,7 +28,7 @@ Ext.define('MyApp.view.calculadora.CalculadoraController' , {
             Resultado: res
         }
 
-        var store = Ext.getCmp('mainlist').getStore() //llama al componente del padre
+        var store = Ext.getCmp('mainlist').getStore() //llama al componente del padre, para acceder al hermano.
         store.add(item)
 
         referencias.Resultado.setHtml('<b> Resultado = ' + res + '</b>')
