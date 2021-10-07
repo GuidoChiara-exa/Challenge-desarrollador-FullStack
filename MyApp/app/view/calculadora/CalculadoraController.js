@@ -19,7 +19,10 @@ Ext.define('MyApp.view.calculadora.CalculadoraController' , {
             res = operando1 * operando2
         }
         if(operacion === '/'){
-            res = operando1 / operando2
+            if(operando2=== 0)
+                res = "Math error"
+            else 
+                res = operando1 / operando2
         }
         var item={
             Operando1: operando1,
